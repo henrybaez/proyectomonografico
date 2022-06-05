@@ -104,7 +104,8 @@ class CI_Config {
 			}
 			else
 			{
-				$base_url = 'http://localhost:8080/';
+				//$base_url = 'http://localhost:8080/';
+				$base_url = 'http://restaurantearcangel.herokuapp.com/';
 			}
 
 			$this->set_item('base_url', $base_url);

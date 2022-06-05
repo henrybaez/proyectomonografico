@@ -249,7 +249,8 @@ class PHPExcel_CachedObjectStorage_Memcache extends PHPExcel_CachedObjectStorage
      */
     public function __construct(PHPExcel_Worksheet $parent, $arguments)
     {
-        $memcacheServer = (isset($arguments['memcacheServer'])) ? $arguments['memcacheServer'] : 'localhost';
+        //$memcacheServer = (isset($arguments['memcacheServer'])) ? $arguments['memcacheServer'] : 'localhost';
+        $memcacheServer = (isset($arguments['memcacheServer'])) ? $arguments['memcacheServer'] : 'https://restaurantearcangel.herokuapp.com/';
         $memcachePort = (isset($arguments['memcachePort'])) ? $arguments['memcachePort'] : 11211;
         $cacheTime = (isset($arguments['cacheTime'])) ? $arguments['cacheTime'] : 600;
 
