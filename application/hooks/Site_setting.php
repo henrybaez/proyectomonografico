@@ -5,9 +5,9 @@ class Site_setting {
     function setSetting(){
         
         //$ss_location = 'http://localhost:80/resto/site_setting/'; 
-        $ss_location = 'http://restaurantearcangel.herokuapp.com/site_setting/'; 
+        $ss_location = 'https://restaurantearcangel.herokuapp.com/site_setting/'; 
 
-        define('ss_location', 'http://restaurantearcangel.herokuapp.com/site_setting/'); 
+        define('ss_location', 'https://restaurantearcangel.herokuapp.com/site_setting/'); 
         //define('ss_location', 'http://localhost:80/resto/site_setting/'); 
 
         $ss_string = file_get_contents($ss_location . "index.json");
