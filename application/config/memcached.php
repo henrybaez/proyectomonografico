@@ -12,7 +12,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config = array(
 	'default' => array(
-		'hostname' => '127.0.0.1',
+		//'hostname' => '127.0.0.1',
+		'hostname' => 'https://restaurantearcangel.herokuapp.com/',
 		'port'     => '11211',
 		'weight'   => '1',
 	),
