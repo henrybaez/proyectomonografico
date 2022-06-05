@@ -62,7 +62,7 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
+	//'dsn'	=> '',
 	//'hostname' => 'localhost',
 	'hostname' => 'sql5.freemysqlhosting.net',
 	//'username' => 'root',
