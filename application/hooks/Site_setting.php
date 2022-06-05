@@ -4,9 +4,9 @@ class Site_setting {
 
     function setSetting(){
         
-        $ss_location = 'http://localhost:8080/resto/site_setting/'; 
+        $ss_location = 'http://localhost:80/resto/site_setting/'; 
 
-        define('ss_location', 'http://localhost:8080/resto/site_setting/'); 
+        define('ss_location', 'http://localhost:80/resto/site_setting/'); 
 
         $ss_string = file_get_contents($ss_location . "index.json");
         $ss_json_a = json_decode($ss_string, true); 
