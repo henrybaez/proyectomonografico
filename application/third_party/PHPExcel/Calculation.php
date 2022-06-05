@@ -2548,7 +2548,7 @@ class PHPExcel_Calculation
     public static function unwrapResult($value)
     {
         if (is_string($value)) {
-            if ((isset($value{0})) && ($value{0} == '"') && (substr($value, -1) == '"')) {
+            if ((isset($value[0])) && ($value[0] == '"') && (substr($value, -1) == '"')) {
                 return substr($value, 1, -1);
             }
         //    Convert numeric errors to NaN error
@@ -3031,7 +3031,7 @@ class PHPExcel_Calculation
             } else {
                 if ($value == '') {
                     return 'an empty string';
-                } elseif ($value{0} == '#') {
+                } elseif ($value[0] == '#') {
                     return 'a '.$value.' error';
                 } else {
                     $typeString = 'a string';
